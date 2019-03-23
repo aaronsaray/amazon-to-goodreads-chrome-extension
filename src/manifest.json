@@ -1,0 +1,30 @@
+{
+  "name": "Amazon to Goodreads",
+  "version": "1.0",
+  "description": "This extension allows you to click a button to open up an Amazon book in Goodreads.",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/logo_16.png",
+    "32": "images/logo_32.png",
+    "128": "images/logo_128.png"
+  },
+  "page_action": {
+    "default_title": "Open this book on Goodreads.",
+    "default_icon": {
+      "16": "images/logo_16.png",
+      "24": "images/logo_24.png",
+      "32": "images/logo_32.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["declarativeContent"]
+}
