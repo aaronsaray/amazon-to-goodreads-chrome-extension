@@ -6,6 +6,7 @@ This extension allows you to click a button to open up an Amazon book in Goodrea
 
 ## Todo
 
+- [] Test it myself for a while before I package it up for wider consumption
 - [] When extension is disabled/not available, change the title
 - [] Disable the extension if there is no found ISBN before user click
 - [] Figure out how to handle issues where you're on a kindle book page - and there is no ISBN available based on my current search
